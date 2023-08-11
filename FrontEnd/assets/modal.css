@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#modalprojet {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+  .modalwrapper {
+    position: relative;
+overflow: auto;
+margin: 0 auto;
+margin-top: 10%;
+    max-width: 630px;
+    height: 731px;
+  background-color: white;
+  border-radius: 10px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .annul-modal {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+
+  .modal h2 {
+    margin-top: 3em;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+}
+
+ 
+  .mini-fiche {
+    width: 18%;
+    height: auto;
+    position: relative;
+  }
+ 
+  .mini-fiche img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+ 
+  .mini-fiche i {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    padding: 2px;
+    border-radius: 50%;
+  }
+ 
+  .mini-fiche p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+  }
+ 
+  .add-photo-btn {
+    
+    width: 237px;
+    height: 36px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1D6154;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 60px;
+  }
+ 
+  .delete-gallery {
+    text-align: center;
+    margin-top: 10px;
+    color: #D65353;
+  }
+
+  
+  .hidden {
+    display: none;
+  }
+  
+
+
+  /* /////// formulaire ////// */
+
+
+
+
+
+
+  #photo-form {
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+
+  #photo-form h2 {
+    color: #000;
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+text-align: center;
+margin-top: 3em;
+margin-bottom: 30px;
+  }
+ 
+
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+
+
+  }
+
+
+
+
+  #photo-container {
+    width: 420px;
+    height: 169px;
+    margin: auto;
+    display: flex;    
+    background-color: #E8F1F7;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+
+  .custom-file-upload { /* Définir l'apparence d'un bouton */
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: grey;
+    border: none;
+    border-radius: 60px;
+    text-align: center;
+   
+  }
+
+
+
+
+
+
+  input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+
+  #photo-container img {
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+
+
+  #photo-container p {
+    margin: 0;
+  }
+
+
+  #photo-form input {
+    width: 420px;
+    height: 51px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+/* Définir le texte */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+
+  #category {
+   
+    width: 420px;
+    height: 51px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+/* Définir le texte */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+
+  hr {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  #photo-form #valider2 {
+    width: 237px;
+    height: 36px;
+    color: #FFFFFF;
+    background: #A7A7A7;
+    border: none;
+    border-radius: 60px;
+  }
+  
+  #photo-form #valider2:hover {
+    width: 237px;
+    height: 36px;
+    color: #FFFFFF;
+    background: #1D6154;
+    border: none;
+    border-radius: 60px;
+  }
+  
+
+
+  
+  
